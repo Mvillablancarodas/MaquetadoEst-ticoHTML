@@ -8,8 +8,242 @@
     <link href="styles.css" rel="stylesheet" type="text/css" media="all">
   </head>
   <body>
-   
-    
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6  col-lg-6">
+            <img src="imagenes/APLogo.png" alt="logo de argentina programa" class="aplogo">
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6  col-lg-6" id="nombre">
+            <h1>
+              <br> Villablanca Rodas Marcia Elizabeth
+            </h1>
+          </div>
+        </div>
+        <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <!-- banner -->
+      <div class="banner">
+        <img src="imagenes/banner.jpeg" alt="banner" class="img-fluit">
+      </div>
+      <br>
+      <hr>
+    </header>
+    <main>
+      <!-- perfil= una fila con tres columnas volver a revisar que no se superpongan con bootstrap -->
+      <div class="container">
+        <div class="row">
+          <!--columna 1-->
+          <div class="col-xs-12 col-sm-6 col-md-3  col-lg-2">
+            <img src="imagenes/elizabeth.jpeg" alt="elizabeth" class="img-perfil" id="foto-de-perfil">
+          </div>
+          <!--columna 2-->
+          <div class="col-xs-12 col-sm-6 col-md-3  col-lg-4" id="nombre">
+            <br>
+            <br>
+            <br>
+            <a><strong> Marcia Elizabeth Villablanca Rodas</strong></a>
+            <p><strong>Programadora full stack developer Jr</strong></p>
+          </div>
+          <!--columna 3-->
+          <div class="col-xs-12 col-sm-12 col-md-6  col-lg-6">
+          <span>
+            <h2>Acerca de mi </h2>
+            <p>Estudiante de ingenieria industrial y quimica, con conocimientos en marketing digital y apacionado por la tecnologia innovadora. El interes por el area de tecnologia me llevo a estudiar programacion web en la cual me estoy formando como desarrolladora full stack en el programa argentina programa.</p>
+          </span>
+          </div>
+        </div>
+      </div>
+      <!-- EXPERIENCIA LABORAL -->
+      <div class="container">
+        <div class="row">
+          <h2>Experiencia laboral</h2>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-11">
+            <ul> 
+              <li>
+                <img src="../imagenes/cooperativa ceicin.jpg" alt="cooperativa ceicin" >
+                <h3>Atencion al cliente </h3> <h4>2016-2017</h4><p>Direccion: Av Velez Sarfiel n°:1145, Cordoba, Argentina</p>
+              </li>
+              <p>Atencion al clienten en el area de cafeteria del bar Cooperativa CEICIN, desempeñandome como cafetera, donde relice las tareas de atencion al cliente, limpieza del area de trabajo, moza y cafeteria </p>
+              <li>
+                <img src="../imagenes/cooperativa ceicin.jpg" alt="cooperativa ceicin" >
+                <h3>Encargada de personal</h3><h4>2017-2018</h4><p>Direccion: Av Velez Sarfiel n°:1145, Cordoba, Argentina</p>
+              </li>
+              <p>Encargada de personal del area del bar donde mis tareas era organizar las tareas a realizar dentro del bar, armar cronograma de horarios de trabajo, coordinar con el area de cocina los menus de la semana para comprar los insumos para la realizacion del mismo y controlar el stock. Encargada con 23 personas a cargo.</p>
+              <li>
+                <h3>Trabajo 3</h3> 
+                <h4>los años</h4>
+                            
+              </li>
+              <p>parrafo del trabajo </p>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      <!-- SECCION DE LOS GRAFICOS CON LAS ACTITUDES -->
+      <section>
+        <div class="row">
+          <h2>Hard & soft skills</h2>
+          <div class="text-center col-sm-3 col-md-4 col-lg-4">
+            <circle-progress
+              [percent]="95"
+              [radius]="100"
+              [imageSrc]="'imagenes/html.png'"
+              [showImage]="true"
+              [imageHeight]="90"
+              [imageWidth]="90"
+              [showUnits]="false" 
+              [showSubtitle]="false"
+              [outerStrokeWidth]="16"
+              [innerStrokeWidth]="8"
+              [outerStrokeColor]="'blue'"
+              [innerStrokeColor]="'#C7E596'"
+              [animation]="true"
+              [animationDuration]="300">
+            </circle-progress>
+          </div>
+          <div class="text-center col-sm-3 col-md-4 col-lg-4">
+            <circle-progress
+              [percent]="90"
+              [radius]="100"
+              [imageSrc]="'imagenes/CSS.png'"
+              [showImage]="true"
+              [imageHeight]="90"
+              [imageWidth]="90"
+              [showUnits]="false" 
+              [showSubtitle]="false"
+              [outerStrokeWidth]="16"
+              [innerStrokeWidth]="8"
+              [outerStrokeColor]="'blue'"
+              [innerStrokeColor]="'#C7E596'"
+              [animation]="true"
+              [animationDuration]="300">
+            </circle-progress>
+          </div>
+          <div class="text-center col-sm-3 col-md-4 col-lg-4">
+            <circle-progress
+              [percent]="70"
+              [radius]="100"
+              [imageSrc]="'../imagenes/js.png'"
+              [showImage]="true"
+              [imageHeight]="85"
+              [imageWidth]="90"
+              [showUnits]="false" 
+              [showSubtitle]="false"
+              [outerStrokeWidth]="16"
+              [innerStrokeWidth]="8"
+              [outerStrokeColor]="'blue'"
+              [innerStrokeColor]="'#C7E596'"
+              [animation]="true"
+              [animationDuration]="300">
+            </circle-progress>
+          </div>
+          <div class="text-center col-sm-3 col-md-4 col-lg-4">
+            <circle-progress
+              [percent]="80"
+              [radius]="100"
+              [imageSrc]="'../imagenes/git.png'"
+              [showImage]="true"
+              [imageHeight]="90"
+              [imageWidth]="90"
+              [showUnits]="false" 
+              [showSubtitle]="false"
+              [outerStrokeWidth]="16"
+              [innerStrokeWidth]="8"
+              [outerStrokeColor]="'blue'"
+              [innerStrokeColor]="'#C7E596'"
+              [animation]="true"
+              [animationDuration]="300">
+            </circle-progress>
+          </div>
+          <div class="text-center col-sm-3 col-md-4 col-lg-4">
+            <circle-progress
+              [percent]="90"
+              [radius]="100"
+              [imageSrc]="'../imagenes/grupal.png'"
+              [showImage]="true"
+              [imageHeight]="90"
+              [imageWidth]="90"
+              [showUnits]="false" 
+              [showSubtitle]="false"
+              [outerStrokeWidth]="16"
+              [innerStrokeWidth]="8"
+              [outerStrokeColor]="'blue'"
+              [innerStrokeColor]="'#C7E596'"
+              [animation]="true"
+              [animationDuration]="300">
+            </circle-progress>
+          </div>
+          <div class="text-center col-sm-3 col-md-4 col-lg-4">
+            <circle-progress
+              [percent]="40"
+              [radius]="100"
+              [imageSrc]="'../imagenes/eng.png'"
+              [showImage]="true"
+              [imageHeight]="90"
+              [imageWidth]="90"
+              [showUnits]="false" 
+              [showSubtitle]="false"
+              [outerStrokeWidth]="16"
+              [innerStrokeWidth]="8"
+              [outerStrokeColor]="'blue'"
+              [innerStrokeColor]="'#C7E596'"
+              [animation]="true"
+              [animationDuration]="300">
+            </circle-progress>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="contenedor">
+            <h1>Proyectos realizados</h1>
+            <div class="row">
+              <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+                <h2>Nombre del proyecto</h2>
+                <p>Realice en primera instacia de aprendisaje un curruculum vitae personal con los primeros conocimientos de Html y Css estudiados de forma autodidacta</p> 
+                <br>
+                <p>Para este proyecto me base en los conocimientos adquiridos en flexbos</p>
+                
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
+                <img src="" alt="" class="" >
+              </div>   
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="logo">
+              <img src="imagenes/APLogo.png" alt="logoap" id="logoap">
+            </div>
+            <!-- No olvidas corregir para que en medidas chicas las imagenes no se amontonen o se superpongan correjir! -->
+            <div class="redes">
+              <a href="https://github.com/Mvillablancarodas" class="_blanck"><img src="imagenes/github.png" alt="github"></a>
+              <a href="https://www.linkedin.com/in/marcia-elizabeth-villablanca-rodas/" class="_blanck"><img src="imagenes/linkedin.png" alt="linkedin"></a>
+              <a href="https://www.instagram.com/elizabethvillab/" class="_blanck" ><img src="imagenes/instagram.png" alt="instagram"></a>
+              <a href="https://www.facebook.com/elizabeth.villablanca1/" class="_blanck"><img src="imagenes/facebook.png" alt="facebook"></a>
+              <button type="button" class="btm btn-outline-light"> ingreso </button>
+            </div>
+          </div>
+        </div>  
+      </section>
+
+      <div class="row">
+        <p>Elizabeth Villablanca Rodas| Argentina programa</p>
+        <p>09/10/22, Cordoba, Argentina</p>
+        <img src="imagenes/copyright.png" alt="copyright" class="copyright">
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
